@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Trebuchet MS, sans-serif;
+  font-size: 20px;  
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 20px;
+  }
+
+h2 {
+    border-bottom: 2px solid black;
+    border-left: 2px solid black; 
+    box-sizing: border-box;
+    width: 33%;
+    text-align: center;
+    padding:5px;
+    float:right;
+}
+
+.row {
+  width: 100%;
+  font-size: 20px;
+}
+
+.col-1, .col-2, .col-3 {
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing: border-box;
+  margin-bottom: 30px;  
+}
+
+.col-1 > div, .col-2 > div, .col-3 > div {
+  float: left;
+  border: 2px solid black; 
+  box-sizing: border-box;
+  font-size: 0.8em;
+  background-color: rgb(180, 180, 180);
+  padding: 0px;
+  margin: 0px;
+}
+
+.col-1 > div > h2 {
+  background-color: rgb(245, 153, 237);
+}
+
+.col-2 > div > h2 {
+  background-color: rgb(197, 87, 87);
+}
+
+.col-3 > div > h2 {
+  background-color: rgb(238, 252, 158);
+}
+
+p{
+  margin: 10px;
+  padding-top: 10px;
+  clear: right;
+}
+
+
+@media (min-width: 992px) {  
+  .col-1 {
+    width: 33.33%;
+  }
+  .col-2 {
+    width: 33.33%;
+  }
+  .col-3 {
+    width: 33.33%;
+  }
+} /*768px and 991px*/
+
+@media (min-width: 768px) and (max-width: 991px) {  
+  .col-1 {
+    width: 50%;
+  }
+  .col-2 {
+    width: 50%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767x) {  
+  .col-1 {
+    width: 100%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+}
+
